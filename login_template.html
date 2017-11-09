@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dodgerblue;
+}
+
+li {
+    float: left;
+	    list-style-type: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+div.container
+{
+padding-right: 2%;
+padding-left: 2%;
+}
+div.center-buttons
+{
+text-align:center;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset = "utf-8">
+</head>
+<body>
+<!-- BEGIN LOGIN -->
+<ul class = "navbar">
+<li><a href="index.php">{MENU1}</a></li>
+<li style = "float: right"><a href="login.php">{MENU2}</a></li>
+<li style = "float: right"><a href="register.php">{MENU3}</a></li>
+</ul>
+<div class = "container">
+<div style = "background-color: red; color: white">{MESSAGE}</div>
+<br>
+<h1 style ="text-align:center"> Login</h1>
+<form method ="post" action="login_action.php">
+<p>Email:</p>
+<input class="w3-input"type ="text" id = "email" name = "email" required></input>
+<p>Password:</p>
+<input class="w3-input" type ="password" id ="pass" name = "pass" required></input>
+<br>
+<!-- END LOGIN -->
+<div class = "center-buttons">
+<button type = "submit" class="w3-button w3-yellow w3-round">Go</button>
+</div>
+</form>
+</div>
+</body>
+<footer><p>&copy; 2017 Desenvolvimento de Aplica&ccedil;&otilde;es para a Web<span style = "float: right"> Designed by: Jos&eacute; Teixeira</span></p></footer>
+</html>
